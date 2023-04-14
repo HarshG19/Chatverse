@@ -4,12 +4,15 @@ import {getStorage} from "firebase/storage"
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB_y4AHZ9S3Q8RrivIEw66L2yUvW7TK0CE",
-  authDomain: "chatverse-c2389.firebaseapp.com",
-  projectId: "chatverse-c2389",
-  storageBucket: "chatverse-c2389.appspot.com",
-  messagingSenderId: "479989862151",
-  appId: "1:479989862151:web:56e011bc6d173abb567fa2"
+  
+//   take the below from firebase by setting up firebase project
+  
+  apiKey: 
+  authDomain: 
+  projectId: 
+  storageBucket: 
+  messagingSenderId: 
+  appId: 
 };
 
 export const app = initializeApp(firebaseConfig);
