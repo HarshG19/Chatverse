@@ -22,13 +22,13 @@ const Input = () => {
 
 const uploadTask = uploadBytesResumable(storageRef, img);
 
-uploadTask.on(
+ uploadTask.on(
 
   (error) => {
     //setError(true);
   }, 
-  () => {     
-    getDownloadURL(uploadTask.snapshot.ref).then(async(downloadURL) => {
+   () => {     
+     getDownloadURL(uploadTask.snapshot.ref).then(async(downloadURL) => {
       await updateDoc(doc(db,"chats",data.chatId),{
         messages: arrayUnion({
           id:uuid(),
